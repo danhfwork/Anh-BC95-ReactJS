@@ -1,7 +1,7 @@
 import { use, useState } from "react";
 import BTCar from "./BTCar/BTCar";
 import DemoProps from "./DemoProps/DemoProps";
-
+import { BTShoes } from "./BTShoes/BTShoes";
 function App() {
   // Tham số 1 là state: nơi chứa giá trị của biến
   // Tham số 2 là hàm setState: hàm để thay đổi giá trị của state => render lại UI
@@ -60,9 +60,10 @@ function App() {
         </button>
       </div>
       <BTCar />
-      <DemoProps text = "Hello World" number = {10} />
-      <DemoProps text = "ABC" number = {10} />
-      <DemoProps text = "XYZ" number = {10} />
+      <DemoProps text="Hello World" number={10} />
+      <DemoProps text="ABC" number={10} />
+      <DemoProps text="XYZ" number={10} />
+      <BTShoes />
     </>
   );
 }
